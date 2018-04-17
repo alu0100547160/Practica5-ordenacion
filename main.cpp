@@ -49,10 +49,11 @@ int main(){
                             cout << " Ha elegido insercción..."<<endl;
                             O.inserccion(secuencia,tam);
                             cout << "Secuencia ordenada: " << endl << "[ ";
-                            // for(int i = 0; i < tam; i++){
-                            //     cout << secuencia[i].get_dni() << " ";
-                            // } 
-                            // cout << "]" << endl;
+                            for(int i = 0; i < tam; i++){
+                                cout << secuencia[i].get_dni() << " ";
+                            } 
+                            cout << "]" << endl;
+                            cout << O.get_comparacion() << endl; 
                         }
                         break;
                         case 2:{
@@ -63,6 +64,7 @@ int main(){
                                 cout << secuencia[i].get_dni() << " ";
                             } 
                             cout << "]" << endl;
+                            cout << O.get_comparacion() << endl; 
                         }
                         break;
                         case 3:{
@@ -75,6 +77,7 @@ int main(){
                                 cout << secuencia[i].get_dni() << " ";
                             } 
                             cout << "]" << endl;
+                            cout << O.get_comparacion() << endl; 
                         }
                         break;
                         case 4:{
@@ -85,6 +88,7 @@ int main(){
                                 cout << secuencia[i].get_dni() << " ";
                             } 
                             cout << "]" << endl;
+                            cout << O.get_comparacion() << endl; 
                         }
                         break;
                         case 5:{
@@ -95,6 +99,7 @@ int main(){
                                 cout << secuencia[i].get_dni() << " ";
                             } 
                             cout << "]" << endl;
+                            cout << O.get_comparacion() << endl; 
                         }
                         break;
                         case 6:{
@@ -105,6 +110,7 @@ int main(){
                                 cout << secuencia[i].get_dni() << " ";
                             } 
                             cout << "]" << endl;
+                            cout << O.get_comparacion() << endl; 
                         }
                         break;
             

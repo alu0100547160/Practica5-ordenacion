@@ -80,6 +80,7 @@ template<class T>
 void ORDENACION<T>::inserccion(vector<T> &secuencia, int tam){
     int j;
     T temp;
+    comparaciones = 0;
     for( int i = 1; i < tam; i++){
         j = i;
         while((j > 0) && (secuencia[j]< secuencia[j-1])){
@@ -95,7 +96,7 @@ void ORDENACION<T>::inserccion(vector<T> &secuencia, int tam){
 
 template<class T>
 void ORDENACION<T>::selecion(vector<T> &secuencia, int tam){
-    
+    comparaciones = 0;
     int pos_min;
     T temp;
     for(int i = 0; i < tam-1; i++){
@@ -119,6 +120,7 @@ void ORDENACION<T>::selecion(vector<T> &secuencia, int tam){
 
 template<class T>
 void ORDENACION<T>::burbuja(vector<T> &secuencia, int tam){
+    comparaciones = 0;
     T temp;
     for(int i = 1; i < tam; i ++){
         for(int j = 0; j < tam - 1; j++){
@@ -135,6 +137,7 @@ void ORDENACION<T>::burbuja(vector<T> &secuencia, int tam){
 
 template<class T>
 void ORDENACION<T>::quicksort(vector<T> &secuencia, int p,int q) {
+   
     int r;
     if(p < q) {
         
@@ -162,6 +165,7 @@ void ORDENACION<T>::quicksort(vector<T> &secuencia, int p,int q) {
 
 template<class T>
 void ORDENACION<T>::shellsort(vector<T> &secuencia, int tam, double delta){
+    comparaciones = 0;
     int  i, j;
     double d;
     for(d = delta * tam; d > 0; d/= 2 ){
@@ -179,6 +183,7 @@ void ORDENACION<T>::shellsort(vector<T> &secuencia, int tam, double delta){
 }
 template<class T>
 void ORDENACION<T>::merge(vector<T> &resultado,vector<T> secuencia1,int izq, vector<T> secuencia2, int dcha){
+    comparaciones = 0;
     int p = 0;
     int p1 = 0;
     int p2 = 0;
